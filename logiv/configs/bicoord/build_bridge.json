@@ -1,0 +1,12 @@
+{
+  "resources": {
+    "pick-support": ["?arm"],
+    "place-support": ["?arm"],
+    "pick-supports": ["?left", "?right"],
+    "place-supports": ["?left", "?right"],
+    "pick-beam": ["?left", "?right"],
+    "put-beam-down": ["?left", "?right"],
+    "place-beam": ["?left", "?right"]
+  },
+  "static_predicates": ["left-arm", "right-arm", "support-arm", "spans"]
+}

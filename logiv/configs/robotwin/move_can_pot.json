@@ -1,0 +1,10 @@
+{
+  "resources": {
+    "grasp-can": ["?arm"],
+    "lift-can": ["?arm"],
+    "place-can-beside-pot": ["?arm"],
+    "grasp-pot": ["?arm"],
+    "align-pot": ["?arm"]
+  },
+  "static_predicates": ["can-arm", "pot-arm", "target-pot"]
+}

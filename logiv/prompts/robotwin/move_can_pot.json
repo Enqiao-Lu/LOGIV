@@ -1,0 +1,28 @@
+{
+  "instructions": {
+    "grasp-can": "Use the {arm} arm to grasp {can} from the table without moving {pot}.",
+    "lift-can": "Use the {arm} arm to lift {can} clear of the table and move it away from nearby obstacles.",
+    "place-can-beside-pot": "Use the {arm} arm to place {can} upright beside {pot} on the same side as its initial position, then open the gripper and withdraw.",
+    "grasp-pot": "Use the {arm} arm to grasp {pot} while keeping the other arm and its held object still.",
+    "align-pot": "Use the {arm} arm to return {pot} to its configured reference placement, then release it and withdraw."
+  },
+  "predicates": {
+    "empty": "The named arm is not holding any object and its gripper is available for the next grasp.",
+    "can-arm": "The configured arm assigned to manipulate this can, determined by the side of the can in the initial layout.",
+    "pot-arm": "The configured arm assigned to restore this pot while the other arm can retain its grasp.",
+    "target-pot": "The configured pot beside which the can must be placed.",
+    "can-on-table": "The can is supported by the table and is not being held by either gripper.",
+    "pot-on-table": "The pot is supported by the table and is not being held by a gripper.",
+    "holding-can": "The named arm securely holds the named can, supported by visual grasp evidence and gripper feedback.",
+    "holding-pot": "The named arm securely holds the named pot, supported by visual grasp evidence and gripper feedback.",
+    "lifted": "The can has been raised clear of the tabletop while remaining securely held.",
+    "pot-aligned": "The pot matches the configured reference placement and the can-placement region remains clear. Use null if the reference placement cannot be established from the supplied calibration and observation.",
+    "beside": "The released can is upright on the table beside the pot on its configured side, with positive lateral separation below 0.2 m and longitudinal offset below 0.035 m. Use null if image calibration or occlusion prevents a reliable spatial judgment."
+  },
+  "objects": {
+    "left": "The robot's left arm and gripper.",
+    "right": "The robot's right arm and gripper.",
+    "sauce-can": "The sauce can actor named can in RoboTwin move_can_pot; this initial symbolic problem assigns it to the left arm.",
+    "kitchen-pot": "The kitchen pot actor named pot in RoboTwin move_can_pot. Its calibrated reference placement must be supplied for the episode."
+  }
+}

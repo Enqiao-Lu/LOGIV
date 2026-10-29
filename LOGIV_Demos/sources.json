@@ -1,0 +1,64 @@
+{
+  "submission": "ICRA 2027, paper 1994",
+  "source_page": "https://ras.papercept.net/conferences/scripts/auspace.pl",
+  "submitted_file": {
+    "filename": "ICRA_submitted_1994_VI_i.mp4",
+    "bytes": 8791767,
+    "sha256": "52165e3881086309ff9b0c461c59e8f90748269d8f5a7bcffde0653ff5c3c965",
+    "duration_seconds": 55.1,
+    "resolution": "1280x720",
+    "fps": 20,
+    "tasks": [
+      "build_blocks",
+      "pick_tomato",
+      "insert_cable"
+    ]
+  },
+  "clips": [
+    {
+      "file": "01_pick_tomato.mp4",
+      "task": "Pick tomato",
+      "start_seconds": 17.4,
+      "end_seconds": 30.55,
+      "frames": 263,
+      "expected_frames": 263,
+      "matches_original_frames": true,
+      "sha256": "8a8a6056949dc8ad6ef37c499fd203532447b35a30a9953aecade85a4ac8d0fe",
+      "method": "Lossless stream copy; decoded frames verified against original"
+    },
+    {
+      "file": "02_build_blocks.mp4",
+      "task": "Build blocks",
+      "start_seconds": 0.0,
+      "end_seconds": 17.4,
+      "frames": 348,
+      "expected_frames": 348,
+      "matches_original_frames": true,
+      "sha256": "190903bd6fa94f378e636b26f662569c614c575759b29ded238d378d32294632",
+      "method": "Lossless stream copy; decoded frames verified against original"
+    },
+    {
+      "file": "03_insert_cable.mp4",
+      "task": "Insert Ethernet cable",
+      "start_seconds": 30.55,
+      "end_seconds": 55.1,
+      "frames": 491,
+      "expected_frames": 491,
+      "matches_original_frames": true,
+      "sha256": "901b1673de9b5112344c7e0970b9bb1e41551cd97bf740eaa028d42a68d46751",
+      "method": "Lossless stream copy; decoded frames verified against original"
+    }
+  ],
+  "wechat_originals": [
+    {
+      "file": "originals/WeChat_1280x720_combined.mp4",
+      "sha256": "fdc28cf05db58509fce429fbde62db0d141ef40db63bfa0e83617d80242dadfd",
+      "note": "Combined demonstrations, not an individual task"
+    },
+    {
+      "file": "originals/WeChat_2560x1440_combined.mp4",
+      "sha256": "65ca0701823cd09b6b62ee0a6b608e749a6a7e9873f46d10bc796cbd819e7e4b",
+      "note": "Combined demonstrations, not an individual task"
+    }
+  ]
+}

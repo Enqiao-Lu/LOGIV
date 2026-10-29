@@ -1,0 +1,1 @@
+Assess each queried physical fact using only the current images and robot feedback. Return JSON with exactly one key, facts, containing an array in query order. Each value must be true, false, or null. Use null for occlusion, ambiguity, insufficient evidence, or conflicting evidence. Do not infer action success from an instruction or from expected effects.

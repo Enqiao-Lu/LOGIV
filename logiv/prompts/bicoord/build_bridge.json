@@ -1,0 +1,31 @@
+{
+  "instructions": {
+    "pick-support": "Use the {arm} arm to pick up {support} from its current position.",
+    "place-support": "Use the {arm} arm to place {support} upright at its configured bridge-support target, then release it and withdraw.",
+    "pick-supports": "Use the {left} arm to grasp {first} and the {right} arm to grasp {second}; lift both supports clear of the table.",
+    "place-supports": "Use the {left} and {right} arms to place {first} and {second} at their respective bridge-support targets, release both supports, and withdraw.",
+    "pick-beam": "Use the {left} and {right} arms together to grasp opposite ends of {beam} and lift it level above the table.",
+    "put-beam-down": "Use the {left} and {right} arms together to lower {beam} onto a clear staging area of the table, release it, and free both grippers.",
+    "place-beam": "Use the {left} and {right} arms together to lower {beam} level across {first} and {second}, then open both grippers and withdraw without displacing the supports."
+  },
+  "predicates": {
+    "empty": "The named arm is not holding an object and its gripper is available for grasping.",
+    "left-arm": "The configured identity of the robot's left arm.",
+    "right-arm": "The configured identity of the robot's right arm.",
+    "support-arm": "The configured arm assigned to the named support, fixed for this symbolic problem.",
+    "spans": "The configured ordered pair of supports that the named beam must span.",
+    "support-on-table": "The support rests on the table and is not held by a gripper; it may be at its target or displaced elsewhere on the tabletop.",
+    "holding-support": "The named arm securely holds the support, confirmed using visible contact and actuator feedback.",
+    "support-ready": "The support is upright, released, stable, and at its calibrated bridge-support target, either before beam placement or while supporting the intended beam. Use null if its position, orientation, or stability cannot be verified.",
+    "beam-on-table": "The red beam rests freely on a clear tabletop staging area and is not held by the robot or supported by the bridge supports.",
+    "beam-held": "Both arms jointly and securely hold opposite ends of the red beam, with the beam lifted clear of the table.",
+    "bridge-ready": "The released red beam is stably supported across both named blue supports, with both ends aligned over their support surfaces and both grippers disengaged. Use null if support contact or stability is occluded."
+  },
+  "objects": {
+    "left": "The robot's left arm and gripper.",
+    "right": "The robot's right arm and gripper.",
+    "blue-left": "The blue cube named box1 in BiCoord build_bridge, initially on the robot's left; keep its identity after displacement.",
+    "blue-right": "The blue cube named box2 in BiCoord build_bridge, initially on the robot's right; keep its identity after displacement.",
+    "red-beam": "The elongated red block named box0 in BiCoord build_bridge, manipulated jointly by both arms."
+  }
+}

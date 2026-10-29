@@ -1,0 +1,26 @@
+# Python environments and build outputs
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Local credentials and editor files
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/
+
+# Downloaded dependencies, datasets, weights, and run outputs
+/external/
+/downloads/
+/checkpoints/
+/data/
+/runs/
+/outputs/
